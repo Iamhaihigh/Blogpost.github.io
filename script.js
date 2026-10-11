@@ -1,9 +1,10 @@
 window.onload = () => {
     let BlogPostList = ["Welcome to My Blog", "Web Development Tips", "Learning Javascript"]
     let BlogPostDesc = ["This is my first blog Post", "Always write a clean and maintaible code", "Today I learn about DOM"]
-    BlogPostList.map((Container, index) => CreateBlogPost(Container, BlogPostDesc[index]))
+    BlogPostList.map((Container, index) => CreateBlogPost(Container, BlogPostDesc[index])
+}
 
-    const CreateBlogPost = (getPostTitle, getPostText) => {
+const CreateBlogPost = (getPostTitle, getPostText) => {
 
     // div
     const Container = document.getElementById("blog-post-container")
@@ -54,7 +55,7 @@ window.onload = () => {
     actionDiv.append(editContentBtn, delBtn)
     blogWrapper.append(headerDiv, PostContent, actionDiv)
     Container.append(blogWrapper)
-}}
+}
 
 const addPost = () => {
     const getPostTitle = prompt("Input your TITLE: ")
