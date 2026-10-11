@@ -1,0 +1,37 @@
+.header{
+    text-align: center;
+}
+
+.Title{
+    margin: 0;
+}
+
+.header-div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.action-div{
+    display: flex;
+    gap: 1rem;
+    
+}
+
+#blog-post-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#add-post-btn{
+    margin: 10px 15px;
+}
+
+.blogPost{
+    margin: 10px 15px ;
+    padding: 10px;
+    background-color: whitesmoke;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+}
